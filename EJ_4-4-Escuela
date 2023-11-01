@@ -1,0 +1,17 @@
+#ejercicio 4-4 de la pizarra 2
+presupuesto: int
+cantidad = int (input("ingresar cantidad de alumnos:"))
+precio=float
+if cantidad >=100:
+    precio= 65.00
+else:
+    if cantidad >= 50 and cantidad <= 99:
+        precio=70
+    else:
+        if cantidad >= 30 and cantidad <=49:
+            precio=95
+        else:
+            precio = 4000 / cantidad
+presupuesto = cantidad * precio 
+print ("El precio por cada alumno es :", precio) 
+print ("El presupuesto total es: ", presupuesto)

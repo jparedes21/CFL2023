@@ -1,0 +1,30 @@
+#ejercicio 4.5 dela pizarra
+tiempo:float
+dia: str
+turno: str
+impuesto:float
+cobro: float
+tiempo=float(input("ingrese el tiempo: "))
+dia=str (input("ingrese dia :"))
+turno=str(input("ingrese turno:(MATUTINO) o (VESPERTINO): "))
+if tiempo <=5:
+    precio= 1
+else:
+    if tiempo <=8:
+        precio=0.80
+    else:
+        if tiempo <=10:
+            precio= 0.70
+        else:
+            if tiempo >10:
+                precio= 0.50
+if dia == "DOMINGO":
+    impuesto= 1.03
+else:
+    if turno == "MATUTINO":
+        impuesto=1.15
+    else:
+        impuesto=1.10
+cobro= (tiempo*precio)*impuesto
+print ("El cobro es: ",cobro)
+#me da error en la linea 29
